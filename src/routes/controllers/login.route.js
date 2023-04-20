@@ -18,6 +18,7 @@ const LoginRoute = async (req, res) => {
                     message: "User found",
                     status: "OK",
                     statusCode: 200,
+                    user: user,
                 });
             } else {
                 res.status(400).json({
