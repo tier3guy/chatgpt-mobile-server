@@ -1,5 +1,5 @@
 const { Schema, model } = require("mongoose");
-const Chat = require("./chats.model.js");
+const { ChatSchema } = require("./chats.model.js");
 
 const UserSchema = new Schema({
     username: {
@@ -20,9 +20,9 @@ const UserSchema = new Schema({
         default: Date.now,
     },
     chatHistory: {
-        type: Array,
+        type: [ChatSchema],
         default: [],
     },
 });
 
-module.exports = model("User", UserSchema);
+(module.exports = model("User", UserSchema)), { UserSchema };

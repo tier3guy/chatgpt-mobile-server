@@ -6,6 +6,7 @@ const {
     SignupRoute,
     DeleteAccountRoute,
     UpdateAccountRoute,
+    AddChatRoute,
 } = require("./controllers");
 
 // GET Requests
@@ -15,6 +16,7 @@ routes.get("/", HomeRoute);
 routes.post("/request-prompt", RequestPromptRoute);
 routes.post("/login", LoginRoute);
 routes.post("/signup", SignupRoute);
+routes.post("/add-chat", AddChatRoute);
 
 // PUT Requests
 routes.put("/update-account", UpdateAccountRoute);
