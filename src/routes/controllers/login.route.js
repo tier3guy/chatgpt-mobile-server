@@ -19,8 +19,12 @@ const LoginRoute = async (req, res) => {
                     status: "OK",
                     statusCode: 200,
                     user: {
-                        ...user,
+                        _id: user._id,
+                        username: user.username,
+                        email: user.email,
                         password: password,
+                        chatHistory: user.chatHistory,
+                        createdAt: user.createdAt,
                     },
                 });
             } else {
