@@ -24,11 +24,12 @@ const AddChatRoute = async (req, res) => {
                             chatHistory: { __id: chat.__id, chats: chat.chats },
                         },
                     });
+
                     return res.status(200).json({
                         message: "Chat Updated Successfully",
                         status: "OK",
                         statusCode: 200,
-                        data: user.chatHistory,
+                        data: user,
                     });
                 } else {
                     user.chatHistory.push(chat);
