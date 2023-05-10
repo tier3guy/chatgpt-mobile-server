@@ -31,6 +31,7 @@ const SignupRoute = async (req, res) => {
                 message: "User created",
                 status: "OK",
                 statusCode: 200,
+                user: newUser,
             });
         }
     } catch (err) {
