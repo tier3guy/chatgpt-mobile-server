@@ -17,10 +17,10 @@ routes.post("/request-prompt", RequestPromptRoute);
 routes.post("/login", LoginRoute);
 routes.post("/signup", SignupRoute);
 routes.post("/add-chat", AddChatRoute);
+routes.post("/clear-chats", ClearChatRoute);
 
 // PUT Requests
 routes.put("/update-account", UpdateAccountRoute);
-routes.put("/clear-chats", ClearChatRoute);
 
 // DELETE Requests
 routes.delete("/delete-account", DeleteAccountRoute);
