@@ -7,6 +7,7 @@ const SignupRoute = require("./signup.route.js");
 const DeleteAccountRoute = require("./deleteAccount.route.js");
 const UpdateAccountRoute = require("./updateAccount.route.js");
 const AddChatRoute = require("./addChat.route.js");
+const ClearChatRoute = require("./clearChats.route.js");
 
 module.exports = {
     HomeRoute,
@@ -16,4 +17,5 @@ module.exports = {
     DeleteAccountRoute,
     UpdateAccountRoute,
     AddChatRoute,
+    ClearChatRoute,
 };
