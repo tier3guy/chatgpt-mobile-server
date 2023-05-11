@@ -7,6 +7,7 @@ const {
     DeleteAccountRoute,
     UpdateAccountRoute,
     AddChatRoute,
+    ClearChatRoute,
 } = require("./controllers");
 
 // GET Requests
