@@ -14,8 +14,7 @@ const ClearChatRoute = async (req, res) => {
             const matched = await comparePassword(password, user.password);
 
             if (matched) {
-                user.chatHistory = [];
-                await user.save();
+                await User.updateOne({ email }, { $set: { chatHistory: [] } });
                 res.status(200).json({
                     message: "Chat Clear Successfully",
                     status: "OK",
